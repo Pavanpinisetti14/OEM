@@ -188,107 +188,315 @@
             relevant information.</p>
         <h2>Data About Vulnerabilities</h2>
         <div class="table-container">
-            <table id="vulnTable">
-                <thead>
-                    <tr>
-                        <th>Company Name</th>
-                        <th>Product</th>
-                        <th>Manufacturing Date</th>
-                        <th>Issue/Vulnerability</th>
-                        <th>Level</th>
-                        <th>Company Email</th>
-                        <th>Category</th>
-                        <th>Code Name</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Table rows will be dynamically populated -->
-                </tbody>
-            </table>
-        </div>
-        <div class="pagination">
-            <button id="prevPage" onclick="changePage(-1)">Previous</button>
-            <span id="pageNumber">Page 1</span>
-            <button id="nextPage" onclick="changePage(1)">Next</button>
-        </div>
-    </main>
+    <table id="vulnTable">
+        <thead>
+            <tr>
+                <th>Company Name</th>
+                <th>Product</th>
+                <th>Manufacturing Date</th>
+                <th>Issue/Vulnerability</th>
+                <th>Level</th>
+                <th>Company Email</th>
+                <th>Category</th>
+                <th>Code Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Microsoft</td>
+                <td>Multiple Products</td>
+                <td>2022-11-23</td>
+                <td>Arbitrary Code Execution</td>
+                <td>Critical</td>
+                <td>security@microsoft.com</td>
+                <td>IT</td>
+                <td>CVE-2017-0199</td>
+            </tr>
+            <tr>
+                <td>Microsoft</td>
+                <td>Exchange Server</td>
+                <td>2022-10-15</td>
+                <td>Arbitrary Code Execution</td>
+                <td>Critical</td>
+                <td>pavanpinisetti@gmail.com</td>
+                <td>IT</td>
+                <td>CVE-2017-11882</td>
+            </tr>
+            <tr>
+                <td>Ivanti</td>
+                <td>Pulse Secure Pulse Connect Secure</td>
+                <td>2020-10-18</td>
+                <td>Arbitrary File Reading</td>
+                <td>High</td>
+                <td>support@ivanti.com</td>
+                <td>Security</td>
+                <td>CVE-2019-11510</td>
+            </tr>
+            <tr>
+                <td>Microsoft</td>
+                <td>Remote Desktop Services</td>
+                <td>2019-08-22</td>
+                <td>RCE</td>
+                <td>Critical</td>
+                <td>security@microsoft.com</td>
+                <td>Remote Code Execution</td>
+                <td>CVE-2019-0708</td>
+            </tr>
+            <tr>
+                <td>Citrix</td>
+                <td>Application Delivery Controller and Gateway</td>
+                <td>2020-03-18</td>
+                <td>Arbitrary Code Execution</td>
+                <td>Critical</td>
+                <td>support@citrix.com</td>
+                <td>Security</td>
+                <td>CVE-2019-19781</td>
+            </tr>
+            <tr>
+                <td>F5 Networks</td>
+                <td>BIG-IP</td>
+                <td>2023-12-25</td>
+                <td>RCE</td>
+                <td>High</td>
+                <td>support@f5.com</td>
+                <td>Network Security</td>
+                <td>CVE-2020-5902</td>
+            </tr>
+            <tr>
+                <td>Microsoft</td>
+                <td>Multiple Products</td>
+                <td>2020-05-14</td>
+                <td>Privilege Escalation</td>
+                <td>Critical</td>
+                <td>security@microsoft.com</td>
+                <td>Authentication</td>
+                <td>CVE-2020-1472</td>
+            </tr>
+            <tr>
+                <td>Oracle</td>
+                <td>WebLogic Server</td>
+                <td>2021-02-02</td>
+                <td>RCE</td>
+                <td>Critical</td>
+                <td>security@oracle.com</td>
+                <td>Remote Code Execution</td>
+                <td>CVE-2020-14882</td>
+            </tr>
+            <tr>
+                <td>Oracle</td>
+                <td>WebLogic Server</td>
+                <td>2022-05-21</td>
+                <td>RCE</td>
+                <td>Critical</td>
+                <td>security@oracle.com</td>
+                <td>Remote Code Execution</td>
+                <td>CVE-2020-14883</td>
+            </tr>
+            <tr>
+                <td>SonicWALL</td>
+                <td>SSLVPN SMA100</td>
+                <td>2020-05-21</td>
+                <td>SQL Injection</td>
+                <td>High</td>
+                <td>support@sonicwall.com</td>
+                <td>Security</td>
+                <td>CVE-2021-20016</td>
+            </tr>
+            <tr>
+                <td>Microsoft</td>
+                <td>Exchange Server</td>
+                <td>2021-08-02</td>
+                <td>ProxyLogon</td>
+                <td>Critical</td>
+                <td>security@microsoft.com</td>
+                <td>Remote Code Execution</td>
+                <td>CVE-2021-26855</td>
+            </tr>
+            <tr>
+                <td>Microsoft</td>
+                <td>Exchange Server</td>
+                <td>2021-08-02</td>
+                <td>ProxyLogon</td>
+                <td>Critical</td>
+                <td>security@microsoft.com</td>
+                <td>Remote Code Execution</td>
+                <td>CVE-2021-27065</td>
+            </tr>
+            <tr>
+                <td>Microsoft</td>
+                <td>Exchange Server</td>
+                <td>2021-08-02</td>
+                <td>ProxyLogon</td>
+                <td>Critical</td>
+                <td>security@microsoft.com</td>
+                <td>Remote Code Execution</td>
+                <td>CVE-2021-26858</td>
+            </tr>
+            <tr>
+                <td>Microsoft</td>
+                <td>Exchange Server</td>
+                <td>2021-08-02</td>
+                <td>ProxyLogon</td>
+                <td>Critical</td>
+                <td>security@microsoft.com</td>
+                <td>Remote Code Execution</td>
+                <td>CVE-2021-26857</td>
+            </tr>
+            <tr>
+                <td>SonicWALL</td>
+                <td>Email Security</td>
+                <td>2021-08-17</td>
+                <td>Privilege Escalation Exploit Chain</td>
+                <td>High</td>
+                <td>support@sonicwall.com</td>
+                <td>Security</td>
+                <td>CVE-2021-20021</td>
+            </tr>
+            <tr>
+                <td>Apache</td>
+                <td>HTTP Server</td>
+                <td>2021-09-01</td>
+                <td>Server-Side Request Forgery</td>
+                <td>Critical</td>
+                <td>security@apache.org</td>
+                <td>Web</td>
+                <td>CVE-2021-40438</td>
+            </tr>
+            <tr>
+                <td>Apache</td>
+                <td>HTTP Server</td>
+                <td>2021-09-01</td>
+                <td>Server Path Traversal</td>
+                <td>Critical</td>
+                <td>security@apache.org</td>
+                <td>Web</td>
+                <td>CVE-2021-41773</td>
+            </tr>
+            <tr>
+                <td>Apache</td>
+                <td>HTTP Server</td>
+                <td>2021-09-01</td>
+                <td>Server Path Traversal</td>
+                <td>Critical</td>
+                <td>security@apache.org</td>
+                <td>Web</td>
+                <td>CVE-2021-42013</td>
+            </tr>
+            <tr>
+                <td>Apache</td>
+                <td>Log4j</td>
+                <td>2021-12-01</td>
+                <td>RCE</td>
+                <td>Critical</td>
+                <td>security@apache.org</td>
+                <td>Logging</td>
+                <td>CVE-2021-45046</td>
+            </tr>
+            <tr>
+                <td>Fortinet</td>
+                <td>FortiOS</td>
+                <td>2022-03-01</td>
+                <td>Heap-based Buffer Overflow</td>
+                <td>High</td>
+                <td>support@fortinet.com</td>
+                <td>Network Security</td>
+                <td>CVE-2022-42475</td>
+            </tr>
+            <tr>
+                <td>Zimbra</td>
+                <td>Collaboration Suite</td>
+                <td>2022-04-01</td>
+                <td>Cross-site Scripting</td>
+                <td>High</td>
+                <td>support@zimbra.com</td>
+                <td>Web Security</td>
+                <td>CVE-2022-24682</td>
+            </tr>
+            <tr>
+                <td>SAP</td>
+                <td>Internet Communication Manager (ICM)</td>
+                <td>2022-05-01</td>
+                <td>HTTP Request Smuggling</td>
+                <td>High</td>
+                <td>pavanpinisetti@gmail.com</td>
+                <td>Web Security</td>
+                <td>CVE-2022-22536</td>
+            </tr>
+            <tr>
+                <td>VMware</td>
+                <td>Spring Cloud</td>
+                <td>2022-06-01</td>
+                <td>RCE</td>
+                <td>Critical</td>
+                <td>support@vmware.com</td>
+                <td>Cloud Security</td>
+                <td>CVE-2022-22963</td>
+            </tr>
+            <tr>
+                <td>WSO2</td>
+                <td>Multiple Products</td>
+                <td>2022-07-01</td>
+                <td>RCE</td>
+                <td>Critical</td>
+                <td>support@wso2.com</td>
+                <td>Security</td>
+                <td>CVE-2022-29464</td>
+            </tr>
+            <tr>
+                <td>Zimbra</td>
+                <td>Zimbra Collaboration Suite</td>
+                <td>2022-08-01</td>
+                <td>Command Injection</td>
+                <td>Critical</td>
+                <td>support@zimbra.com</td>
+                <td>Security</td>
+                <td>CVE-2022-27924</td>
+            </tr>
+            <tr>
+                <td>Microsoft</td>
+                <td>Windows CSRSS</td>
+                <td>2022-09-01</td>
+                <td>Elevation of Privilege</td>
+                <td>Critical</td>
+                <td>security@microsoft.com</td>
+                <td>Authentication</td>
+                <td>CVE-2022-22047</td>
+            </tr>
+            <tr>
+                <td>QNAP</td>
+                <td>QNAP NAS</td>
+                <td>2022-10-01</td>
+                <td>Externally Controlled Reference</td>
+                <td>High</td>
+                <td>support@qnap.com</td>
+                <td>Storage Security</td>
+                <td>CVE-2022-27593</td>
+            </tr>
+            <tr>
+                <td>Microsoft</td>
+                <td>Exchange Server</td>
+                <td>2022-11-01</td>
+                <td>Privilege Escalation</td>
+                <td>High</td>
+                <td>security@microsoft.com</td>
+                <td>IT</td>
+                <td>CVE-2022-41082</td>
+            </tr>
+            <tr>
+                <td>Fortinet</td>
+                <td>FortiOS, FortiProxy, FortiSwitchManager</td>
+                <td>2022-12-01</td>
+                <td>Authentication Bypass</td>
+                <td>High</td>
+                <td>support@fortinet.com</td>
+                <td>Network Security</td>
+                <td>CVE-2022-40684</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
-    <script>
-        const rowsPerPage = 10;
-        const table = document.getElementById('vulnTable');
-        const tbody = table.querySelector('tbody');
-        const prevButton = document.getElementById('prevPage');
-        const nextButton = document.getElementById('nextPage');
-        const pageNumber = document.getElementById('pageNumber');
-
-        const data = [
-            ["Microsoft", "Multiple Products", "2022-11-23", "Arbitrary Code Execution", "Critical", "security@microsoft.com", "IT", "CVE-2017-0199"],
-            ["Microsoft", "Exchange Server", "2022-10-15", "Arbitrary Code Execution", "Critical", "security@microsoft.com", "IT", "CVE-2017-11882"],
-            ["Ivanti", "Pulse Secure Pulse Connect Secure", "2020-10-18", "Arbitrary File Reading", "High", "support@ivanti.com", "Security", "CVE-2019-11510"],
-            ["Microsoft", "Remote Desktop Services", "2019-08-22", "RCE", "Critical", "pavanpinisetti@gmail.com", "Remote Code Execution", "CVE-2019-0708"],
-            ["Citrix", "Application Delivery Controller and Gateway", "2020-03-18", "Arbitrary Code Execution", "Critical", "support@citrix.com", "Security", "CVE-2019-19781"],
-            ["F5 Networks", "BIG-IP", "2023-12-25", "RCE", "High", "support@f5.com", "Network Security", "CVE-2020-5902"],
-            ["Microsoft", "Multiple Products", "2020-05-14", "Privilege Escalation", "Critical", "security@microsoft.com", "Authentication", "CVE-2020-1472"],
-            ["Oracle", "WebLogic Server", "2021-02-02", "RCE", "Critical", "security@oracle.com", "Remote Code Execution", "CVE-2020-14882"],
-            ["Oracle", "WebLogic Server", "2022-05-21", "RCE", "Critical", "security@oracle.com", "Remote Code Execution", "CVE-2020-14883"],
-            ["SonicWALL", "SSLVPN SMA100", "2020-05-21", "SQL Injection", "High", "support@sonicwall.com", "Security", "CVE-2021-20016"],
-            ["Microsoft", "Exchange Server", "2021-08-02", "ProxyLogon", "Critical", "security@microsoft.com", "Remote Code Execution", "CVE-2021-26855"],
-            ["Microsoft", "Exchange Server", "2021-08-02", "ProxyLogon", "Critical", "security@microsoft.com", "Remote Code Execution", "CVE-2021-27065"],
-            ["Microsoft", "Exchange Server", "2021-08-02", "ProxyLogon", "Critical", "security@microsoft.com", "Remote Code Execution", "CVE-2021-26858"],
-            ["Microsoft", "Exchange Server", "2021-08-02", "ProxyLogon", "Critical", "security@microsoft.com", "Remote Code Execution", "CVE-2021-26857"],
-            ["SonicWALL", "Email Security", "2021-08-17", "Privilege Escalation Exploit Chain", "High", "support@sonicwall.com", "Security", "CVE-2021-20021"],
-            ["Apache", "HTTP Server", "2021-09-01", "Server-Side Request Forgery", "Critical", "security@apache.org", "Web", "CVE-2021-40438"],
-            ["Apache", "HTTP Server", "2021-09-01", "Server Path Traversal", "Critical", "security@apache.org", "Web", "CVE-2021-41773"],
-            ["Apache", "HTTP Server", "2021-09-01", "Server Path Traversal", "Critical", "security@apache.org", "Web", "CVE-2021-42013"],
-            ["Apache", "Log4j", "2021-12-01", "RCE", "Critical", "security@apache.org", "Logging", "CVE-2021-45046"],
-            ["Fortinet", "FortiOS", "2022-03-01", "Heap-based Buffer Overflow", "High", "support@fortinet.com", "Network Security", "CVE-2022-42475"],
-            ["Zimbra", "Collaboration Suite", "2022-04-01", "Cross-site Scripting", "High", "support@zimbra.com", "Web Security", "CVE-2022-24682"],
-            ["SAP", "Internet Communication Manager (ICM)", "2022-05-01", "HTTP Request Smuggling", "High", "pavanpinisetti@gmail.com", "Web Security", "CVE-2022-22536"],
-            ["VMware", "Spring Cloud", "2022-06-01", "RCE", "Critical", "support@vmware.com", "Cloud Security", "CVE-2022-22963"],
-            ["WSO2", "Multiple Products", "2022-07-01", "RCE", "Critical", "support@wso2.com", "Security", "CVE-2022-29464"],
-            ["Zimbra", "Zimbra Collaboration Suite", "2022-08-01", "Command Injection", "Critical", "support@zimbra.com", "Security", "CVE-2022-27924"],
-            ["Microsoft", "Windows CSRSS", "2022-09-01", "Elevation of Privilege", "Critical", "security@microsoft.com", "Authentication", "CVE-2022-22047"],
-            ["QNAP", "QNAP NAS", "2022-10-01", "Externally Controlled Reference", "High", "support@qnap.com", "Storage Security", "CVE-2022-27593"],
-            ["Microsoft", "Exchange Server", "2022-11-01", "Privilege Escalation", "High", "security@microsoft.com", "IT", "CVE-2022-41082"],
-            ["Fortinet", "FortiOS, FortiProxy, FortiSwitchManager", "2022-12-01", "Authentication Bypass", "High", "support@fortinet.com", "Network Security", "CVE-2022-40684"]
-        ];
-    
-
-        let currentPage = 1;
-        const totalPages = Math.ceil(data.length / rowsPerPage);
-
-        function renderTable(page) {
-            tbody.innerHTML = '';
-            const start = (page - 1) * rowsPerPage;
-            const end = start + rowsPerPage;
-            const paginatedItems = data.slice(start, end);
-
-            paginatedItems.forEach(row => {
-                const tr = document.createElement('tr');
-                row.forEach(cell => {
-                    const td = document.createElement('td');
-                    td.textContent = cell;
-                    tr.appendChild(td);
-                });
-                tbody.appendChild(tr);
-            });
-
-            pageNumber.textContent = `Page ${currentPage}`;
-            prevButton.classList.toggle('disabled', currentPage === 1);
-            nextButton.classList.toggle('disabled', currentPage === totalPages);
-        }
-
-        function changePage(delta) {
-            const newPage = currentPage + delta;
-            if (newPage >= 1 && newPage <= totalPages) {
-                currentPage = newPage;
-                renderTable(currentPage);
-            }
-        }
-
-        renderTable(currentPage);
-    </script>
-    <br>
+	<br>
 
     <footer>
         <div class="footer-content">
@@ -329,4 +537,3 @@
     
 </body>
 </html>
-
